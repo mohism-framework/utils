@@ -1,0 +1,43 @@
+{
+  "name": "@mohism/utils",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npx mocha --require ts-node/register **/*.spec.ts",
+    "build": "npx eslint src/**/*.ts --fix && npx tsc",
+    "lint": "npx eslint src/**/*.ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohism-framework/utils.git"
+  },
+  "keywords": [
+    "mohism",
+    "utils"
+  ],
+  "author": "lanhao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohism-framework/utils/issues"
+  },
+  "homepage": "https://github.com/mohism-framework/utils#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/colors": "^1.2.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.5",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^1.19.4",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dayjs": "^1.8.16"
+  }
+}
