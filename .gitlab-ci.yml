@@ -11,5 +11,6 @@ job_test:
   only:
     - master
   script:
+    - pwd
     - npm i
     - npm test
