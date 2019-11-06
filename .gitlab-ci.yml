@@ -3,6 +3,8 @@ stages:
 
 job_test:
   stage: test
+  tags:
+    - github
   image: registry.cn-hangzhou.aliyuncs.com/tik/node:tik
   cache:
     untracked: true
