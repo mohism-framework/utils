@@ -8,7 +8,7 @@ job_test:
   image: registry.cn-hangzhou.aliyuncs.com/tik/node:tik
   cache:
     untracked: true
-    key: ${CI_COMMIT_REF_SLUG}
+    key: mohism_utils
     policy: push
   only:
     - master
