@@ -1,6 +1,7 @@
-import { expect, assert } from 'chai';
+import { assert } from 'chai';
 import { describe, it } from 'mocha';
-import { Logger, rightpad, Dict } from './index';
+
+import { Logger, rightpad } from '../src';
 
 describe('load libs', () => {
   it('logger', () => {

@@ -1,10 +1,11 @@
 {
   "name": "@mohism/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "npx mocha --require ts-node/register **/*.spec.ts",
+    "cover": "npx nyc npm test",
+    "test": "npx mocha --recursive -r ts-node/register tests/**/*.spec.ts",
     "build": "npx eslint src/**/*.ts --fix && npx tsc",
     "lint": "npx eslint src/**/*.ts --fix"
   },
@@ -33,6 +34,7 @@
     "eslint": "^6.6.0",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
+    "nyc": "^14.1.1",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.4"
   },
