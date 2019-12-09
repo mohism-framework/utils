@@ -1,11 +1,12 @@
-import { assert } from 'chai';
+import { assert,expect } from 'chai';
 import { describe, it } from 'mocha';
 
 import { Logger, rightpad } from '../src';
+import { ConsoleLogger } from '../src/libs/logger';
 
 describe('load libs', () => {
   it('logger', () => {
-    assert.equal(Logger.name, 'Logger');
+    expect(Logger).is.instanceOf(ConsoleLogger)
   });
   it('rightpad', () => {
     assert.equal(rightpad.name, 'rightpad');
