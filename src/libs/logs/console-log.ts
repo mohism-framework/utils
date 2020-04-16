@@ -1,5 +1,5 @@
 import { blue, grey, yellow, red } from 'colors';
-import rp from './rightpad';
+import rp from '../rightpad';
 import dayjs from 'dayjs';
 
 const stringify = (input: any): string => {

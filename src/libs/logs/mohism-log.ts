@@ -1,17 +1,17 @@
 import log4js, { Logger as L4jLogger, LoggingEvent } from 'log4js';
 import { hostname } from 'os';
 
-import { ConsoleLogger } from '../logger';
+import { ConsoleLogger } from './console-log';
 
 export enum LOG_DRIVER {
   console = 'console',
   log4js = 'log4js',
 }
 
-export type LogConf = {
-  appID?: number,
-  logPath?: string,
-  driver: LOG_DRIVER,
+export interface LogConf {
+  appID?: number;
+  logPath?: string;
+  driver: LOG_DRIVER;
 }
 
 class MohismLogger {
