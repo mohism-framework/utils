@@ -1,6 +1,6 @@
-import { assert } from 'chai';
 import { describe, it } from 'mocha';
-import Logger from '../src/libs/logger';
+
+import Logger from '../src/libs/logs/console-log';
 
 describe('logger tests', () => {
   it('info', () => {

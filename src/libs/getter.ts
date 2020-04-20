@@ -1,3 +1,4 @@
+
 import { Dict } from './type';
 
 export default class Getter<T extends Dict<U>, U> {

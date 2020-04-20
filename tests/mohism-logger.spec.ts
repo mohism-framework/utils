@@ -1,5 +1,5 @@
 import { describe, it } from 'mocha';
-import MohismLogger, { LOG_DRIVER } from '../src/libs/mohism-log';
+import MohismLogger, { LOG_DRIVER } from '../src/libs/logs/mohism-log';
 
 const Logger = new MohismLogger({
   driver: LOG_DRIVER.console,

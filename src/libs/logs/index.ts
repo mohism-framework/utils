@@ -12,4 +12,4 @@ function getLogger() {
   return consoleLogger;
 }
 
-export default getLogger();
+export default getLogger;

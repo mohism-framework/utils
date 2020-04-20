@@ -14,7 +14,7 @@ export interface LogConf {
   driver: LOG_DRIVER;
 }
 
-class MohismLogger {
+export class MohismLogger {
   conf: LogConf;
   driver: L4jLogger | ConsoleLogger;
   constructor(conf: LogConf) {
