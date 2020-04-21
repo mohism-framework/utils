@@ -1,14 +1,14 @@
 
 import { Dict } from './type';
 
-export default class Getter<T extends Dict<U>, U> {
-  private data: T;
+export default class Getter<T> {
+  private data: Dict<T>;
 
-  constructor(data: T) {
+  constructor(data: Dict<T>) {
     this.data = data;
   }
 
-  get(name: string): U {
+  get(name: string): T {
     return this.data[name];
   }
 }
