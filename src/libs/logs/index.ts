@@ -4,7 +4,7 @@ import consoleLogger from "./console-log";
 function getLogger() {
   if (process.env.NODE_ENV === 'production') {
     return new MohismLogger({
-      appID: 9999,
+      appID: Number.parseInt(process.env.APP_ID || '9999',10),
       logPath: '/tmp',
       driver: LOG_DRIVER.log4js,
     });
