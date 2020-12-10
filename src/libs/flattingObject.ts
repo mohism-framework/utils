@@ -18,6 +18,11 @@ function doFlatting(prefix: string, obj: Dict<any>): Dict<any> {
   return result;
 }
 
+/**
+ * 逆扁平化
+ * @example {"a.b":"c"} ==> {"a":{"b":"c"}}
+ * @param flat 
+ */
 export const reFlatting = (flat: Dict<any>): Dict<any> => {
   const result: Dict<any> = {};
   Object.keys(flat).forEach((key: string) => {
@@ -33,6 +38,11 @@ export const reFlatting = (flat: Dict<any>): Dict<any> => {
   return result;
 };
 
+/**
+ * 扁平化对象成 k-v 格式
+ * @example {"a":{"b":"c"}} ==>  {"a.b":"c"}
+ * @param obj 
+ */
 export const flatting = (obj: object): Dict<any> => {
   return doFlatting('', obj);
 };

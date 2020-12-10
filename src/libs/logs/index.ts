@@ -1,6 +1,11 @@
 import MohismLogger, { LOG_DRIVER } from "./mohism-log";
 import consoleLogger from "./console-log";
 
+/**
+ * 根据NODE_ENV获取logger实例
+ * production时使用log4js输出到文件
+ * 否则输出到console
+ */
 function getLogger() {
   if (process.env.NODE_ENV === 'production') {
     return new MohismLogger({

@@ -16,6 +16,6 @@ export const toAbcDef = (input: string): string => {
  */
 export const toabcDef = (input: string): string => {
   return input.split(' ').map((piece: string, index: number) => {
-    return `${index > 0 ? piece[0].toUpperCase() : piece[0]}${piece.substr(1)}`;
+    return `${index > 0 ? piece[0].toUpperCase() : piece[0].toLowerCase()}${piece.substr(1)}`;
   }).join('');
 };
