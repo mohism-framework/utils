@@ -12,6 +12,7 @@ export interface LogConf {
   appID?: number;
   logPath?: string;
   driver: LOG_DRIVER;
+  level?: string;
 }
 
 export class MohismLogger {
@@ -57,7 +58,11 @@ export class MohismLogger {
         }
       }
     });
-    return log4js.getLogger();
+    const logger = log4js.getLogger();
+    if (this.conf.level) {
+      logger.level = this.conf.level;
+    }
+    return logger;
   }
 
   initConsole(): ConsoleLogger {
@@ -73,6 +78,10 @@ export class MohismLogger {
   }
 
   err(ctx: any): void {
+    this.driver.error(ctx);
+  }
+
+  error(ctx: any): void {
     this.driver.error(ctx);
   }
 }

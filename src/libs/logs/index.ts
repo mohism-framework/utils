@@ -12,6 +12,7 @@ function getLogger() {
       appID: Number.parseInt(process.env.APP_ID || '9999',10),
       logPath: '/tmp',
       driver: LOG_DRIVER.log4js,
+      level: process.env.LOG_LEVEL || 'debug',
     });
   }
   return consoleLogger;
