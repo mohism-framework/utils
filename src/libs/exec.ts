@@ -1,6 +1,6 @@
 import { spawnSync, SpawnSyncReturns } from 'child_process';
 
-export const exec = (cmd: string): SpawnSyncReturns<Buffer> => {
+export const exec = (cmd: string): SpawnSyncReturns<Buffer | string> => {
   const argv = cmd.split(' ');
 
   return spawnSync(argv[0], argv.slice(1), {
