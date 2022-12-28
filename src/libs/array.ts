@@ -6,7 +6,7 @@
  * @returns 
  */
 
-export const count = function (
+export const countBy = function (
   arr: Array<{ [key: string]: any }>,
   key: string,
   trans: (key: string) => string = key => key,

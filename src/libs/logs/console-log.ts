@@ -11,6 +11,7 @@ const LEVEL_MAP: { [key: string]: number } = {
   info: 1,
   warn: 2,
   error: 3,
+  ultra: 99,
 }
 
 export class ConsoleLogger {

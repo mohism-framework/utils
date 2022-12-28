@@ -21,6 +21,7 @@ describe('mohism-logger-tests', () => {
   });
   it('err', () => {
     Logger.err('err');
+    Logger.error('err');
   });
   it('info object', () => {
     Logger.info({});

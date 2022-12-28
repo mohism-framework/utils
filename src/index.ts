@@ -8,3 +8,4 @@ export { default as Maker } from './libs/lazy';
 
 export { toAbcDef, toabcDef } from './libs/formatString';
 export { flatting, reFlatting } from './libs/flattingObject';
+export * from './libs/array';
