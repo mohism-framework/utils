@@ -18,4 +18,4 @@ export const countBy = function (
   }
   );
   return result;
-}
+};

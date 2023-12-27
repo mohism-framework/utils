@@ -1,6 +1,6 @@
 {
   "name": "@mohism/utils",
-  "version": "1.1.11",
+  "version": "1.2.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -25,9 +25,8 @@
   "homepage": "https://github.com/mohism-framework/utils#readme",
   "devDependencies": {
     "@types/chai": "^4.2.4",
-    "@types/colors": "^1.2.1",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.12.7",
+    "@types/node": "^20.10.5",
     "@types/shelljs": "^0.8.6",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
@@ -36,8 +35,8 @@
     "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
     "nyc": "^14.1.1",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.7.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "colors": "=1.4.0",
